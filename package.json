@@ -1,0 +1,24 @@
+{
+  "name": "photo-carousel-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html -p 3000 --open",
+    "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
